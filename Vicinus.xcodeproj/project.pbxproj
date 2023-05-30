@@ -11,6 +11,11 @@
 		6909ECA32A26878100998D51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6909ECA22A26878100998D51 /* ContentView.swift */; };
 		6909ECA52A26878200998D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6909ECA42A26878200998D51 /* Assets.xcassets */; };
 		6909ECA92A26878200998D51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6909ECA82A26878200998D51 /* Preview Assets.xcassets */; };
+		69ABD2A82A26993A0037F661 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69ABD2A52A26993A0037F661 /* Roboto-Bold.ttf */; };
+		69ABD2A92A26993A0037F661 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69ABD2A62A26993A0037F661 /* Roboto-Medium.ttf */; };
+		69ABD2AA2A26993A0037F661 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69ABD2A72A26993A0037F661 /* Roboto-Regular.ttf */; };
+		69ABD2B12A269AD60037F661 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABD2B02A269AD60037F661 /* FontStyle.swift */; };
+		69ABD2B32A269E2F0037F661 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABD2B22A269E2F0037F661 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,12 @@
 		6909ECA42A26878200998D51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6909ECA62A26878200998D51 /* Vicinus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vicinus.entitlements; sourceTree = "<group>"; };
 		6909ECA82A26878200998D51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69ABD2A52A26993A0037F661 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		69ABD2A62A26993A0037F661 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		69ABD2A72A26993A0037F661 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		69ABD2AB2A2699710037F661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		69ABD2B02A269AD60037F661 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
+		69ABD2B22A269E2F0037F661 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +63,11 @@
 		6909EC9F2A26878100998D51 /* Vicinus */ = {
 			isa = PBXGroup;
 			children = (
+				69ABD2AB2A2699710037F661 /* Info.plist */,
+				69ABD2AC2A269A2A0037F661 /* Sources */,
+				69ABD2A32A26989F0037F661 /* Resources */,
 				6909ECA02A26878100998D51 /* VicinusApp.swift */,
 				6909ECA22A26878100998D51 /* ContentView.swift */,
-				6909ECA42A26878200998D51 /* Assets.xcassets */,
 				6909ECA62A26878200998D51 /* Vicinus.entitlements */,
 				6909ECA72A26878200998D51 /* Preview Content */,
 			);
@@ -67,6 +80,58 @@
 				6909ECA82A26878200998D51 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69ABD2A32A26989F0037F661 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69ABD2A42A2698C80037F661 /* Fonts */,
+				6909ECA42A26878200998D51 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69ABD2A42A2698C80037F661 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				69ABD2A52A26993A0037F661 /* Roboto-Bold.ttf */,
+				69ABD2A62A26993A0037F661 /* Roboto-Medium.ttf */,
+				69ABD2A72A26993A0037F661 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		69ABD2AC2A269A2A0037F661 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69ABD2AF2A269A880037F661 /* App */,
+				69ABD2AE2A269A710037F661 /* Extensions */,
+				69ABD2AD2A269A580037F661 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		69ABD2AD2A269A580037F661 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		69ABD2AE2A269A710037F661 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69ABD2AF2A269A880037F661 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69ABD2B02A269AD60037F661 /* FontStyle.swift */,
+				69ABD2B22A269E2F0037F661 /* Color.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ABD2A92A26993A0037F661 /* Roboto-Medium.ttf in Resources */,
 				6909ECA92A26878200998D51 /* Preview Assets.xcassets in Resources */,
+				69ABD2AA2A26993A0037F661 /* Roboto-Regular.ttf in Resources */,
 				6909ECA52A26878200998D51 /* Assets.xcassets in Resources */,
+				69ABD2A82A26993A0037F661 /* Roboto-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6909ECA32A26878100998D51 /* ContentView.swift in Sources */,
+				69ABD2B32A269E2F0037F661 /* Color.swift in Sources */,
 				6909ECA12A26878100998D51 /* VicinusApp.swift in Sources */,
+				69ABD2B12A269AD60037F661 /* FontStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +339,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vicinus/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vicinus/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
